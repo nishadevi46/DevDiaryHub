@@ -23,7 +23,6 @@
     "mongoose": "^6.3.4",
     "multer": "^1.4.4",
     "multer-gridfs-storage": "^5.0.2",
-    "package_name": "^1.0.2",
     "path": "^0.12.7"
     
   },
