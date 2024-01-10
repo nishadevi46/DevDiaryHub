@@ -1,8 +1,8 @@
  import bcrypt from 'bcrypt'
- import User from '../../../DevDiaryHub/backend/model/user.js'
+ import User from '../model/user.js'
  import jwt from 'jsonwebtoken'
  import dotenv from 'dotenv'
- import Token from '../../../DevDiaryHub/backend/model/token.js'
+ import Token from '../model/token.js'
  dotenv.config()
  export const signupUser=async (request,response)=>{
        try {
