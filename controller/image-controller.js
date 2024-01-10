@@ -1,6 +1,6 @@
 import grid from 'gridfs-stream'
 import mongoose from 'mongoose'
-const url=''
+const url='https://devdiaryhub.onrender.com'
 const conn=mongoose.connection;
 let gfs, gridfsBucket;
 conn.once('open',()=>{

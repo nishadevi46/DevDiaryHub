@@ -1,7 +1,7 @@
 import axios from 'axios'
 import { API_NOTIFICATION_MESSAGES, SERVICE_URL } from '../constants/config'
 import { getAccessToken, getType } from '../utlis/common-utlis'
-const API_URL = ''
+const API_URL = 'https://devdiaryhub.onrender.com'
 const axiosinstance = axios.create({
   baseURL: API_URL,
   timeout: 10000,
