@@ -2,7 +2,7 @@
   "name": "backend",
   "version": "1.0.0",
   "description": "This is a Blogging site where u can express ur feelings & experience in words this dolder contains the server part of the website ",
-  "main": "server.js",
+  "main": "index.js",
   "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
