@@ -10,7 +10,6 @@
  
   },
   "keywords": [],
-  "engines": { "node": "0.4.3" },
   "author": "Nisha Devi",
   "license": "ISC",
   "dependencies": {
