@@ -13,6 +13,7 @@ router.get('/file/:filename',getImage);
 router.post('/create',authenticateToken,createPost)
 router.post('/comment/new',authenticateToken,newComment)
 router.get('/posts',authenticateToken,getAllPosts)
+
 router.get('/comments/:id',authenticateToken,getComments)
 router.delete('/comment/delete/:id', authenticateToken, deleteComment);
 router.get('/post/:id', authenticateToken, getPost);

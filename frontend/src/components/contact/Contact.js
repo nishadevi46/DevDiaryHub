@@ -1,7 +1,6 @@
 
 import { Box, styled, Typography, Link } from '@mui/material';
 import { GitHub, LinkedIn, Email } from '@mui/icons-material';
-
 import backgroundImage from '../../images/11.jpg'
 const Banner = styled(Box)`
     background-image:url(${backgroundImage});
@@ -9,19 +8,13 @@ const Banner = styled(Box)`
     height: 50vh;
     background-position: left 0px top -100px;
     background-size: cover;
-`;
-
+`
 const Wrapper = styled(Box)`
     padding: 20px;
-   
-
-`;
-
+`
 const Text = styled(Typography)`
     color: #F9E8D9;
-`;
-
-
+`
 const Contact = () => {
     return (
         <Box >
@@ -42,5 +35,4 @@ const Contact = () => {
         </Box>
     );
 }
-
 export default Contact;

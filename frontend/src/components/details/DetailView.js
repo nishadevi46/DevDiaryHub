@@ -60,7 +60,7 @@ const DetailView =()=>{
     const [post,setPost] = useState({});
     const navigate = useNavigate()
     const url= post.picture ? post.picture : 'https://images.unsplash.com/photo-1606589367364-8cf4f74bae83?q=80&w=2012&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
-    const { id } = useParams()
+    const { id } = useParams();
     const { account } = useContext(DataContext)
     useEffect(()=>{
        const fetchData = async()=>{
@@ -70,7 +70,7 @@ const DetailView =()=>{
           }
        }
        fetchData()
-    }, [])
+    }, []) // eslint-disable-line react-hooks/exhaustive-deps
     const deleteBlog=async()=>{
         let response = await API.deletePost(post._id);
         if(response.isSuccess){
@@ -87,6 +87,7 @@ const DetailView =()=>{
                 <DeleteIcon onClick={() => deleteBlog()} color="error" />
                 </>
             }
+            console.log(post.username)
             </Box>
             <Heading>{post.title}</Heading>
             <Author>
